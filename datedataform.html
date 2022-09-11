@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Purchase details by Date</title>
+        <style>
+            body 
+            {
+                max-width: 400px;
+                margin: auto;
+                background-color: indigo;
+                text-align: center;
+            }
+            form 
+            {
+                width: 150px;
+                border: 15px solid paleturquoise;
+                padding: 50px;
+                margin: 60px;
+            }
+            input[type=button], input[type=submit], input[type=reset]
+            {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <centre>
+    <caption><marquee>Select Dates for viewing the details.</marquee></caption>
+        <form method="POST" action="datedata.php">
+            <label>Select From Date</label>
+            <input type="date" name="fdate"><br><br>
+            <label>Select To Date</label>
+            <input type="date" name="tdate"><br><br>
+            <input type="submit" name="submit" value="GET DETAILS"><br><br>
+            <input type="reset" name="reset" value="CLEAR"><br><br>
+            <a href="start.html" target="_self"><input type="button" value="BACK TO HOME" /></a>
+        </form>
+    </centre>
+</html>

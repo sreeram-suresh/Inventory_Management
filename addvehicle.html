@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Add Vehicle</title>
+        <style>
+            body 
+            {
+                max-width: 400px;
+                margin: auto;
+                background-color: rgb(104, 36, 47);
+                text-align: center;
+            }
+            form 
+            {
+                width: 150px;
+                border: 15px solid rgb(194, 169, 57);
+                padding: 50px;
+                margin: 60px;
+            }
+            input[type=button], input[type=submit], input[type=reset]
+            {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <centre>
+            <form method="post" action="insertvehicle.php">
+                <label>Enter Vehicle Number:</label>
+                <input type="text" name="newvehicle"><br><br>
+                <input type="submit" name="submit" value="Add Vehicle"><br>
+                <input type="reset" name="reset" value="Clear Vehicle"><br>
+                <a href="start.html" target="_self"><input type="button" value="BACK TO HOME" /></a>
+            </form>
+        </centre>
+    </body>
+</html>
